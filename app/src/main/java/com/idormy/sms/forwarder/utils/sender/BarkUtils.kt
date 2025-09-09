@@ -61,7 +61,7 @@ class BarkUtils {
             val msgMap: MutableMap<String, Any> = mutableMapOf()
             msgMap["title"] = title
             msgMap["body"] = content
-            msgMap["isArchive"] = 1
+            msgMap["isArchive"] = 0
             if (!TextUtils.isEmpty(setting.group)) msgMap["group"] = setting.group
             if (!TextUtils.isEmpty(setting.icon)) msgMap["icon"] = setting.icon
             if (!TextUtils.isEmpty(setting.level)) msgMap["level"] = setting.level
@@ -172,3 +172,4 @@ class BarkUtils {
 
     }
 }
+
